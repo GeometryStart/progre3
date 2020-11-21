@@ -1,0 +1,11 @@
+/Users/admin/Projects/TestTööKS/TestTööKS/bin/Debug/netcoreapp3.1/TestTööKS.deps.json
+/Users/admin/Projects/TestTööKS/TestTööKS/bin/Debug/netcoreapp3.1/TestTööKS.runtimeconfig.json
+/Users/admin/Projects/TestTööKS/TestTööKS/bin/Debug/netcoreapp3.1/TestTööKS.runtimeconfig.dev.json
+/Users/admin/Projects/TestTööKS/TestTööKS/bin/Debug/netcoreapp3.1/TestTööKS.dll
+/Users/admin/Projects/TestTööKS/TestTööKS/bin/Debug/netcoreapp3.1/TestTööKS.pdb
+/Users/admin/Projects/TestTööKS/TestTööKS/obj/Debug/netcoreapp3.1/TestTööKS.AssemblyInfoInputs.cache
+/Users/admin/Projects/TestTööKS/TestTööKS/obj/Debug/netcoreapp3.1/TestTööKS.AssemblyInfo.cs
+/Users/admin/Projects/TestTööKS/TestTööKS/obj/Debug/netcoreapp3.1/TestTööKS.csproj.CoreCompileInputs.cache
+/Users/admin/Projects/TestTööKS/TestTööKS/obj/Debug/netcoreapp3.1/TestTööKS.dll
+/Users/admin/Projects/TestTööKS/TestTööKS/obj/Debug/netcoreapp3.1/TestTööKS.pdb
+/Users/admin/Projects/TestTööKS/TestTööKS/obj/Debug/netcoreapp3.1/TestTööKS.genruntimeconfig.cache

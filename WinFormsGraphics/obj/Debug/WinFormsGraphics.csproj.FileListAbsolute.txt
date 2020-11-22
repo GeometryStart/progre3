@@ -1,0 +1,10 @@
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\obj\Debug\WinFormsGraphics.csprojAssemblyReference.cache
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\obj\Debug\WinFormsGraphics.MainForm.resources
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\obj\Debug\WinFormsGraphics.Properties.Resources.resources
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\obj\Debug\WinFormsGraphics.csproj.GenerateResource.cache
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\obj\Debug\WinFormsGraphics.csproj.CoreCompileInputs.cache
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\bin\Debug\WinFormsGraphics.exe.config
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\bin\Debug\WinFormsGraphics.exe
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\bin\Debug\WinFormsGraphics.pdb
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\obj\Debug\WinFormsGraphics.exe
+C:\Users\kerttu.sepp\Documents\Kerttu\Kool\Progre3\WinFormsGraphics\obj\Debug\WinFormsGraphics.pdb

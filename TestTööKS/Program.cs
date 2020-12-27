@@ -163,64 +163,7 @@ namespace TestTööKS
         }
 
 
-        public static void PlayTicTacToe()
-        {
-            // 4.Trips - traps - trull konsoolil.Esmalt trükitakse välja mänguväli(3 rida ja 3 veergu) ja siis palutakse sisestada esimese või 
-            //teise mängija(kuvatakse kumma kord parasjagu on) poolt komaga eraldatud koordinaadid(1,3), millisele positsioonile oma märk kirjutada.Peab kontrollima, 
-            //et sisestatud on korrektne ja peale seda uuesti välja trükkima
 
-            int player = 1;
-            int choice;
-            char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-
-            Console.WriteLine("Player1:X and Player2:O");
-
-            Console.WriteLine("\n");
-
-            if (player % 2 == 0)//checking the chance of the player  
-
-            {
-
-                Console.WriteLine("Player 2 Chance");
-
-            }
-
-            else
-
-            {
-
-                Console.WriteLine("Player 1 Chance");
-
-            }
-
-            Console.WriteLine("\n");
-
-
-            choice = int.Parse(Console.ReadLine());//Taking users choice  
-
-
-
-            Console.WriteLine("     |     |      ");
-
-            //Console.WriteLine("  {0}  |  {1}  |  {2}", arr[1], arr[2], arr[3]);
-
-            Console.WriteLine("_____|_____|_____ ");
-
-            Console.WriteLine("     |     |      ");
-
-           // Console.WriteLine("  {0}  |  {1}  |  {2}", arr[4], arr[5], arr[6]);
-
-            Console.WriteLine("_____|_____|_____ ");
-
-            Console.WriteLine("     |     |      ");
-
-           // Console.WriteLine("  {0}  |  {1}  |  {2}", arr[7], arr[8], arr[9]);
-
-            Console.WriteLine("     |     |      ");
-
-
-
-
-        }
+            
     } 
 }

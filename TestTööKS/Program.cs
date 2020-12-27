@@ -24,7 +24,7 @@ namespace TestTööKS
             //    //}
             //}
 
-            //Function1();
+            Function1();
             //Function2();
             //Function3();
             //Function4();
@@ -47,9 +47,10 @@ namespace TestTööKS
                 var input = Console.ReadLine();
 
 
-                if (input == "")
+                if (string.IsNullOrWhiteSpace(input))
                 {
                     isNotEmpty = false;
+                    break;
 
                 }
                 else

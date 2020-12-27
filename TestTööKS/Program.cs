@@ -8,7 +8,7 @@ namespace TestTööKS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Kerttu lahendatud ülesanded!");
 
             //1.Trükkida välja kõik kolmega jagunevad arvud vahemikus 1..100
 
@@ -24,8 +24,11 @@ namespace TestTööKS
             //    //}
             //}
 
+            //Function1();
             //Function2();
-            PlayTicTacToe();
+            //Function3();
+            //Function4();
+
 
 
         }

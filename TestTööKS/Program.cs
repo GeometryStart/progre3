@@ -10,42 +10,44 @@ namespace TestTööKS
         {
             Console.WriteLine("Hello World!");
 
-            
+            //1.Trükkida välja kõik kolmega jagunevad arvud vahemikus 1..100
+
+            //for (int i = 1; i < 1000; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine("Jagub 3-ga: " + i);
+            //    }
+            //    //else
+            //    //{
+            //    //    Console.WriteLine("Ei jagu 3-ga " + i);
+            //    //}
+            //}
+
+            //Function2();
+            PlayTicTacToe();
 
 
-        //1.Trükkida välja kõik kolmega jagunevad arvud vahemikus 1..100
+        }
+        public static void Function1()
+        {
+            // 2.Lase kasutajal sisestada arve kuni tühi string vastuseks tuleb(ehk ENTER ilma midagi kirjutamata).Arvuta nende arvude summa ning min ja max väärtused. Trüki saadud tulemused ekraanile
 
-        //for (int i = 1; i < 1000; i++)
-        //{
-        //    if (i % 3 == 0)
-        //    {
-        //        Console.WriteLine("Jagub 3-ga: " + i);
-        //    }
-        //    //else
-        //    //{
-        //    //    Console.WriteLine("Ei jagu 3-ga " + i);
-        //    //}
-        //}
-
-
-
-        // 2.Lase kasutajal sisestada arve kuni tühi string vastuseks tuleb(ehk ENTER ilma midagi kirjutamata).Arvuta nende arvude summa ning min ja max väärtused. Trüki saadud tulemused ekraanile
-
-        var arrayOfInputs = new List<int>();
+            var arrayOfInputs = new List<int>();
 
             bool isNotEmpty = true;
             Console.WriteLine("Sisesta numbrid: ");
 
             while (isNotEmpty)
             {
-                
+
                 var input = Console.ReadLine();
-                
+
 
                 if (input == "")
                 {
                     isNotEmpty = false;
-          
+
                 }
                 else
                 {
@@ -54,32 +56,36 @@ namespace TestTööKS
 
             }
 
-            
-            Console.WriteLine("Sisestatud numbrite summa on: " + arrayOfInputs.Sum() +  " ja  " +  "Max väärtus: " + arrayOfInputs.Max() + " ja Min väärtus: " + arrayOfInputs.Min());
+
+            Console.WriteLine("Sisestatud numbrite summa on: " + arrayOfInputs.Sum() + " ja  " + "Max väärtus: " + arrayOfInputs.Max() + " ja Min väärtus: " + arrayOfInputs.Min());
 
             Console.ReadLine();
+        }
 
+        public static void Function2()
+        {
             // 3.Loome pisikese mängu, kus kas vastane või arvuti paneb esmalt kirja numbri vahemikus 1..50 ja seejärel püüame pakutud arvu ära arvata.Vastusena igale pakkumisele peame ütlema, kas tegu on pakutud arvuga, on see väiksem kui pakutu või suurem kui pakutu.Kui tühi string pannakse, katkestatakse mäng.Lõpuks teavitatakse mitu katset on tehtud ja kas õige tulemus leiti või mitte
 
 
             bool doContinue = true;
-            
+
             var generatedNumber = new Random().Next(50);
             Console.WriteLine("Genereeritud number on: " + generatedNumber);
             Console.WriteLine("Arva ära, mis numbri valis arvuti: ");
-            var count = 0; 
+            var count = 0;
             while (doContinue)
             {
                 var input = Console.ReadLine();
-
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("Väljusid mängust aga ei arvanud numbrit ära, proovisid täpselt: " + count + "korda");
+                    break;
+                    
+                }
                 if (Convert.ToInt32(input) == generatedNumber)
                 {
                     doContinue = false;
                     Console.WriteLine("Arvasid numbri õigesti, proovisid täpselt: " + count + "korda");
-                }
-                else if (input == "") {
-                    doContinue = false;
-                    Console.WriteLine("Väljusid mängust aga ei arvanud numbrit ära, proovisid täpselt: " + count + "korda");
                 }
                 else
                 {
@@ -89,30 +95,24 @@ namespace TestTööKS
                         count++;
                     }
                     else
-                     {
+                    {
                         Console.WriteLine("Ei ole õige, Sinu pakutud arv oli suurem. Proovi veel");
                         count++;
                     }
-
                 }
-
             }
 
-
             Console.ReadLine();
+        }
 
-            // 4.Trips - traps - trull konsoolil.Esmalt trükitakse välja mänguväli(3 rida ja 3 veergu) ja siis palutakse sisestada esimese või teise mängija(kuvatakse kumma kord parasjagu on) poolt komaga eraldatud koordinaadid(1,3), millisele positsioonile oma märk kirjutada.Peab kontrollima, et sisestatud on korrektne ja peale seda uuesti välja trükkima
 
-
+        public static void Function3()
+        {
             //N elemendiga massiiv, trükkige välja, siis muutke järjekorda:
+            
 
-            int[] numbers = new int[5];
+            int[] numbers = new int[5] {3, 13, 10, 12, 5 };
 
-            numbers[0] = 3;
-            numbers[1] = 13;
-            numbers[2] = 10;
-            numbers[3] = 12;
-            numbers[4] = 5;
 
             for (int i = 0; i < 5; i++)
             {
@@ -131,8 +131,10 @@ namespace TestTööKS
                 Console.WriteLine("Tagurpidi: " + numberRev[i]);
             }
 
+        }
 
-
+        public static  void Function4()
+        {
             // 2 mõõõtmeline maatriks, väärtustage ja printige välja.
 
             var maatriks2 = new int[3, 2]
@@ -158,8 +160,67 @@ namespace TestTööKS
             }
 
             Console.WriteLine(arrayString);
-    
+        }
+
+
+        public static void PlayTicTacToe()
+        {
+            // 4.Trips - traps - trull konsoolil.Esmalt trükitakse välja mänguväli(3 rida ja 3 veergu) ja siis palutakse sisestada esimese või 
+            //teise mängija(kuvatakse kumma kord parasjagu on) poolt komaga eraldatud koordinaadid(1,3), millisele positsioonile oma märk kirjutada.Peab kontrollima, 
+            //et sisestatud on korrektne ja peale seda uuesti välja trükkima
+
+            int player = 1;
+            int choice;
+            char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+            Console.WriteLine("Player1:X and Player2:O");
+
+            Console.WriteLine("\n");
+
+            if (player % 2 == 0)//checking the chance of the player  
+
+            {
+
+                Console.WriteLine("Player 2 Chance");
+
+            }
+
+            else
+
+            {
+
+                Console.WriteLine("Player 1 Chance");
+
+            }
+
+            Console.WriteLine("\n");
+
+
+            choice = int.Parse(Console.ReadLine());//Taking users choice  
+
+
+
+            Console.WriteLine("     |     |      ");
+
+            //Console.WriteLine("  {0}  |  {1}  |  {2}", arr[1], arr[2], arr[3]);
+
+            Console.WriteLine("_____|_____|_____ ");
+
+            Console.WriteLine("     |     |      ");
+
+           // Console.WriteLine("  {0}  |  {1}  |  {2}", arr[4], arr[5], arr[6]);
+
+            Console.WriteLine("_____|_____|_____ ");
+
+            Console.WriteLine("     |     |      ");
+
+           // Console.WriteLine("  {0}  |  {1}  |  {2}", arr[7], arr[8], arr[9]);
+
+            Console.WriteLine("     |     |      ");
+
+
+
 
         }
-    }
+    } 
 }

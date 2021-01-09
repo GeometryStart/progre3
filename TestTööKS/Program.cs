@@ -74,7 +74,7 @@ namespace TestTööKS
             bool doContinue = true;
 
             var generatedNumber = new Random().Next(50);
-            Console.WriteLine("Genereeritud number on: " + generatedNumber);
+            //Console.WriteLine("Genereeritud number on: " + generatedNumber);
             Console.WriteLine("Arva ära, mis numbri valis arvuti: ");
             var count = 0;
             while (doContinue)
